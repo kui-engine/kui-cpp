@@ -1,0 +1,2 @@
+add_executable(native_platform_06_timer_intervals main.cpp)
+target_link_libraries(native_platform_06_timer_intervals PRIVATE kui)

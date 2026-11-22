@@ -1,0 +1,2 @@
+add_executable(native_showcase_02_chat_app main.cpp)
+target_link_libraries(native_showcase_02_chat_app PRIVATE kui)

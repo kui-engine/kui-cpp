@@ -1,0 +1,2 @@
+add_executable(native_html_24_web_fonts main.cpp)
+target_link_libraries(native_html_24_web_fonts PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_canvas2d_01_basic_drawing main.cpp)
+target_link_libraries(native_canvas2d_01_basic_drawing PRIVATE kui)

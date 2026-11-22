@@ -1,0 +1,2 @@
+add_executable(native_showcase_04_settings_page main.cpp)
+target_link_libraries(native_showcase_04_settings_page PRIVATE kui)

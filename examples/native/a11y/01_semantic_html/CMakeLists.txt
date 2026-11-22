@@ -1,0 +1,2 @@
+add_executable(native_a11y_01_semantic_html main.cpp)
+target_link_libraries(native_a11y_01_semantic_html PRIVATE kui)

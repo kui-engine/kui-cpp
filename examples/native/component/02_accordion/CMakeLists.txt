@@ -1,0 +1,2 @@
+add_executable(native_component_02_accordion main.cpp)
+target_link_libraries(native_component_02_accordion PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_styling_03_color_formats main.cpp)
+target_link_libraries(native_styling_03_color_formats PRIVATE kui)

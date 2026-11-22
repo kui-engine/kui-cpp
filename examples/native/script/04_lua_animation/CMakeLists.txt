@@ -1,0 +1,2 @@
+add_executable(native_script_04_lua_animation main.cpp)
+target_link_libraries(native_script_04_lua_animation PRIVATE kui)

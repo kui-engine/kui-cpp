@@ -1,0 +1,2 @@
+add_executable(native_extension_04_dom_observer main.cpp)
+target_link_libraries(native_extension_04_dom_observer PRIVATE kui)

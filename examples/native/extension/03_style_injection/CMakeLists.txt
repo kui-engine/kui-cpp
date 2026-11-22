@@ -1,0 +1,2 @@
+add_executable(native_extension_03_style_injection main.cpp)
+target_link_libraries(native_extension_03_style_injection PRIVATE kui)

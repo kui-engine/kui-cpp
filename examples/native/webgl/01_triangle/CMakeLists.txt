@@ -1,0 +1,8 @@
+add_executable(native_webgl_01_triangle main.cpp)
+target_link_libraries(native_webgl_01_triangle PRIVATE kui)
+if(WIN32)
+    target_link_libraries(native_webgl_01_triangle PRIVATE opengl32)
+elseif(UNIX AND NOT APPLE)
+    find_package(OpenGL REQUIRED)
+    target_link_libraries(native_webgl_01_triangle PRIVATE OpenGL::GL)
+endif()

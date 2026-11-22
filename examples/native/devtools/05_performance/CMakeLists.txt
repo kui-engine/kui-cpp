@@ -1,0 +1,2 @@
+add_executable(native_devtools_05_performance main.cpp)
+target_link_libraries(native_devtools_05_performance PRIVATE kui)

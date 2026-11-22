@@ -1,0 +1,2 @@
+add_executable(native_script_03_lua_events main.cpp)
+target_link_libraries(native_script_03_lua_events PRIVATE kui)

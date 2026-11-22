@@ -1,0 +1,2 @@
+add_executable(native_styling_11_import_rule main.cpp)
+target_link_libraries(native_styling_11_import_rule PRIVATE kui)

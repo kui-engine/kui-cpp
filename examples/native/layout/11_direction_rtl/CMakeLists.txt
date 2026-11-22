@@ -1,0 +1,2 @@
+add_executable(native_layout_11_direction_rtl main.cpp)
+target_link_libraries(native_layout_11_direction_rtl PRIVATE kui)

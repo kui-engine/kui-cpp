@@ -1,0 +1,2 @@
+add_executable(native_3d_engine_11_physics_rigid_body main.cpp)
+target_link_libraries(native_3d_engine_11_physics_rigid_body PRIVATE kui)

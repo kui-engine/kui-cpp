@@ -1,0 +1,2 @@
+add_executable(native_showcase_03_file_browser main.cpp)
+target_link_libraries(native_showcase_03_file_browser PRIVATE kui)

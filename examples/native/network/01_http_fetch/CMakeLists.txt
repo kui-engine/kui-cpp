@@ -1,0 +1,2 @@
+add_executable(native_network_01_http_fetch main.cpp)
+target_link_libraries(native_network_01_http_fetch PRIVATE kui)

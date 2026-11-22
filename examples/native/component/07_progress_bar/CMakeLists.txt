@@ -1,0 +1,2 @@
+add_executable(native_component_07_progress_bar main.cpp)
+target_link_libraries(native_component_07_progress_bar PRIVATE kui)

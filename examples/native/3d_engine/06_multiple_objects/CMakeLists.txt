@@ -1,0 +1,2 @@
+add_executable(native_3d_engine_06_multiple_objects main.cpp)
+target_link_libraries(native_3d_engine_06_multiple_objects PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_component_01_tabs main.cpp)
+target_link_libraries(native_component_01_tabs PRIVATE kui)

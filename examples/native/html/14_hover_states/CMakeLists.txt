@@ -1,0 +1,2 @@
+add_executable(native_html_14_hover_states main.cpp)
+target_link_libraries(native_html_14_hover_states PRIVATE kui)

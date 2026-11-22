@@ -1,0 +1,2 @@
+add_executable(native_advanced_04_custom_element main.cpp)
+target_link_libraries(native_advanced_04_custom_element PRIVATE kui)

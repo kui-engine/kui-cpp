@@ -1,0 +1,2 @@
+add_executable(native_component_06_pagination main.cpp)
+target_link_libraries(native_component_06_pagination PRIVATE kui)

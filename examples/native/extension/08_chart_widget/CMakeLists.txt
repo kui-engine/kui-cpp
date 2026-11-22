@@ -1,0 +1,2 @@
+add_executable(native_extension_08_chart_widget main.cpp)
+target_link_libraries(native_extension_08_chart_widget PRIVATE kui)

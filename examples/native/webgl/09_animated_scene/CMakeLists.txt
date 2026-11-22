@@ -1,0 +1,8 @@
+add_executable(native_webgl_09_animated_scene main.cpp)
+target_link_libraries(native_webgl_09_animated_scene PRIVATE kui)
+if(WIN32)
+    target_link_libraries(native_webgl_09_animated_scene PRIVATE opengl32)
+elseif(UNIX AND NOT APPLE)
+    find_package(OpenGL REQUIRED)
+    target_link_libraries(native_webgl_09_animated_scene PRIVATE OpenGL::GL)
+endif()

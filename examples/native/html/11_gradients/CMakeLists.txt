@@ -1,0 +1,2 @@
+add_executable(native_html_11_gradients main.cpp)
+target_link_libraries(native_html_11_gradients PRIVATE kui)

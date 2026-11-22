@@ -1,0 +1,2 @@
+add_executable(native_html_16_css_variables main.cpp)
+target_link_libraries(native_html_16_css_variables PRIVATE kui)

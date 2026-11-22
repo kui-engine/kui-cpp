@@ -1,0 +1,2 @@
+add_executable(native_styling_08_counter_css main.cpp)
+target_link_libraries(native_styling_08_counter_css PRIVATE kui)

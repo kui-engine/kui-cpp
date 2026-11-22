@@ -1,0 +1,2 @@
+add_executable(native_animation_02_transition_timing main.cpp)
+target_link_libraries(native_animation_02_transition_timing PRIVATE kui)

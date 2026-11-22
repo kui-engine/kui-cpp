@@ -1,0 +1,2 @@
+add_executable(native_frameless_04_round_corners main.cpp)
+target_link_libraries(native_frameless_04_round_corners PRIVATE kui)

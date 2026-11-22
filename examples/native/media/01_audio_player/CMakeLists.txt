@@ -1,0 +1,2 @@
+add_executable(native_media_01_audio_player main.cpp)
+target_link_libraries(native_media_01_audio_player PRIVATE kui)

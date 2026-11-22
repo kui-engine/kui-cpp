@@ -1,0 +1,8 @@
+add_executable(native_webgl_06_shader_uniform main.cpp)
+target_link_libraries(native_webgl_06_shader_uniform PRIVATE kui)
+if(WIN32)
+    target_link_libraries(native_webgl_06_shader_uniform PRIVATE opengl32)
+elseif(UNIX AND NOT APPLE)
+    find_package(OpenGL REQUIRED)
+    target_link_libraries(native_webgl_06_shader_uniform PRIVATE OpenGL::GL)
+endif()

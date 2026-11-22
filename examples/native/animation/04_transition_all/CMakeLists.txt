@@ -1,0 +1,2 @@
+add_executable(native_animation_04_transition_all main.cpp)
+target_link_libraries(native_animation_04_transition_all PRIVATE kui)

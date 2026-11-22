@@ -1,0 +1,2 @@
+add_executable(native_effects_04_clip_path main.cpp)
+target_link_libraries(native_effects_04_clip_path PRIVATE kui)

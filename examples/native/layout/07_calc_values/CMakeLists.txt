@@ -1,0 +1,2 @@
+add_executable(native_layout_07_calc_values main.cpp)
+target_link_libraries(native_layout_07_calc_values PRIVATE kui)

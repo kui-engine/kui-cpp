@@ -1,0 +1,2 @@
+add_executable(native_component_04_tooltip_comp main.cpp)
+target_link_libraries(native_component_04_tooltip_comp PRIVATE kui)

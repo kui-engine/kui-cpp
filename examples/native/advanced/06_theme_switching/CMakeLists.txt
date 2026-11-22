@@ -1,0 +1,2 @@
+add_executable(native_advanced_06_theme_switching main.cpp)
+target_link_libraries(native_advanced_06_theme_switching PRIVATE kui)

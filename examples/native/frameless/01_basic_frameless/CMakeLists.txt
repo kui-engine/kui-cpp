@@ -1,0 +1,2 @@
+add_executable(native_frameless_01_basic_frameless main.cpp)
+target_link_libraries(native_frameless_01_basic_frameless PRIVATE kui)

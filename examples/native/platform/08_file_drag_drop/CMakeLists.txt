@@ -1,0 +1,2 @@
+add_executable(native_platform_08_file_drag_drop main.cpp)
+target_link_libraries(native_platform_08_file_drag_drop PRIVATE kui)

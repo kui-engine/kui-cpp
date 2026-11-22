@@ -1,0 +1,20 @@
+<!DOCTYPE html><html><head><style>
+body{margin:0;padding:24px;background:#080d1b;color:#e0e7ff;font-family:"Segoe UI",sans-serif}.panel{display:flex;gap:20px}.card{padding:16px;background:#121a31;border:1px solid #33456f;border-radius:12px}canvas{display:block;background:#020617;border-radius:8px}h2{color:#a5b4fc;margin:0 0 10px}.status{margin-top:10px;color:#86efac;font:12px Consolas,monospace;white-space:pre-line}.info{width:280px;color:#9ca3af;line-height:1.6;font-size:13px}
+</style></head><body><h2>WebGL Instanced Drawing</h2><div class="panel"><div class="card"><canvas id="canvas" width="600" height="520"></canvas><div id="status" class="status">Preparing instance buffers...</div></div><div class="card info">One triangle vertex buffer plus per-instance offset/color buffers. <b>vertexAttribDivisor</b> advances those attributes once per instance; <b>drawArraysInstanced</b> submits all 120 instances in one call.</div></div><script type="text/lua">
+local canvas=document:getElementById("canvas");local status=document:getElementById("status");local gl=canvas:getContext("webgl")
+if not gl then status.textContent="ERROR: WebGL unavailable" return end
+local function compile(t,s)local h=gl:createShader(t);gl:shaderSource(h,s);gl:compileShader(h);if gl:getShaderParameter(h,gl.COMPILE_STATUS)==0 then status.textContent=gl:getShaderInfoLog(h);return nil end;return h end
+local vs=compile(gl.VERTEX_SHADER,[[attribute vec2 aPos;attribute vec2 aOffset;attribute vec3 aColor;uniform float uTime;varying vec3 vColor;void main(){float w=sin(uTime+aOffset.x*8.+aOffset.y*5.)*.018;gl_Position=vec4(aPos+vec2(aOffset.x,aOffset.y+w),0.,1.);vColor=aColor;}]])
+local fs=compile(gl.FRAGMENT_SHADER,[[precision mediump float;varying vec3 vColor;void main(){gl_FragColor=vec4(vColor,1.);}]])
+if not vs or not fs then return end
+local p=gl:createProgram();gl:attachShader(p,vs);gl:attachShader(p,fs);gl:linkProgram(p);if gl:getProgramParameter(p,gl.LINK_STATUS)==0 then status.textContent=gl:getProgramInfoLog(p);return end;gl:useProgram(p)
+local base={-.035,-.028,.035,-.028,0,.045};local b=gl:createBuffer();gl:bindBuffer(gl.ARRAY_BUFFER,b);gl:bufferDataFloat(gl.ARRAY_BUFFER,base,gl.STATIC_DRAW)
+local aPos=gl:getAttribLocation(p,"aPos");gl:enableVertexAttribArray(aPos);gl:vertexAttribPointer(aPos,2,gl.FLOAT,false,0,0)
+local offsets={};local colors={};local count=0
+for y=0,9 do for x=0,11 do count=count+1;table.insert(offsets,-.86+x*.156);table.insert(offsets,-.78+y*.174);table.insert(colors,.2+x/15);table.insert(colors,.3+y/14);table.insert(colors,.95-(x+y)/35) end end
+local ob=gl:createBuffer();gl:bindBuffer(gl.ARRAY_BUFFER,ob);gl:bufferDataFloat(gl.ARRAY_BUFFER,offsets,gl.STATIC_DRAW);local aOffset=gl:getAttribLocation(p,"aOffset");gl:enableVertexAttribArray(aOffset);gl:vertexAttribPointer(aOffset,2,gl.FLOAT,false,0,0);gl:vertexAttribDivisor(aOffset,1)
+local cb=gl:createBuffer();gl:bindBuffer(gl.ARRAY_BUFFER,cb);gl:bufferDataFloat(gl.ARRAY_BUFFER,colors,gl.STATIC_DRAW);local aColor=gl:getAttribLocation(p,"aColor");gl:enableVertexAttribArray(aColor);gl:vertexAttribPointer(aColor,3,gl.FLOAT,false,0,0);gl:vertexAttribDivisor(aColor,1)
+local uTime=gl:getUniformLocation(p,"uTime");local frame=0
+local function render(now)gl:beginFrame();gl:clearColor(.015,.025,.07,1);gl:clear(gl.COLOR_BUFFER_BIT);gl:uniform1f(uTime,now/700);gl:drawArraysInstanced(gl.TRIANGLES,0,3,count);gl:endFrame();frame=frame+1;if frame%30==0 then status.textContent="Instances: "..count.."\nSubmission: drawArraysInstanced · one draw call" end;requestAnimationFrame(render)end
+requestAnimationFrame(render)
+</script></body></html>

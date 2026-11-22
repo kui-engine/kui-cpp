@@ -1,0 +1,2 @@
+add_executable(native_styling_04_cursor_styles main.cpp)
+target_link_libraries(native_styling_04_cursor_styles PRIVATE kui)

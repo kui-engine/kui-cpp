@@ -1,0 +1,2 @@
+add_executable(native_3d_engine_12_physics_collision main.cpp)
+target_link_libraries(native_3d_engine_12_physics_collision PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_platform_04_file_dialog main.cpp)
+target_link_libraries(native_platform_04_file_dialog PRIVATE kui)

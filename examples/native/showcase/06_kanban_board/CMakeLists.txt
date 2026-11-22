@@ -1,0 +1,2 @@
+add_executable(native_showcase_06_kanban_board main.cpp)
+target_link_libraries(native_showcase_06_kanban_board PRIVATE kui)

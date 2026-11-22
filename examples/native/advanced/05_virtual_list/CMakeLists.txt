@@ -1,0 +1,2 @@
+add_executable(native_advanced_05_virtual_list main.cpp)
+target_link_libraries(native_advanced_05_virtual_list PRIVATE kui)

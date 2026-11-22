@@ -1,0 +1,2 @@
+add_executable(native_platform_02_dpi_scaling main.cpp)
+target_link_libraries(native_platform_02_dpi_scaling PRIVATE kui)

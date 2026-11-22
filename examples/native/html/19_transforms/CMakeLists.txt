@@ -1,0 +1,2 @@
+add_executable(native_html_19_transforms main.cpp)
+target_link_libraries(native_html_19_transforms PRIVATE kui)

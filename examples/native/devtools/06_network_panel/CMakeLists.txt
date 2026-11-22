@@ -1,0 +1,2 @@
+add_executable(native_devtools_06_network_panel main.cpp)
+target_link_libraries(native_devtools_06_network_panel PRIVATE kui)

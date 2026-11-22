@@ -1,0 +1,2 @@
+add_executable(native_styling_07_word_wrap main.cpp)
+target_link_libraries(native_styling_07_word_wrap PRIVATE kui)

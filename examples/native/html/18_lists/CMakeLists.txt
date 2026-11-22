@@ -1,0 +1,2 @@
+add_executable(native_html_18_lists main.cpp)
+target_link_libraries(native_html_18_lists PRIVATE kui)

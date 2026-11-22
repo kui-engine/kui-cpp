@@ -1,0 +1,2 @@
+add_executable(native_platform_01_window_resize main.cpp)
+target_link_libraries(native_platform_01_window_resize PRIVATE kui)

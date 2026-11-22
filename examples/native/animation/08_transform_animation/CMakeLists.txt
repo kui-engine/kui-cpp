@@ -1,0 +1,2 @@
+add_executable(native_animation_08_transform_animation main.cpp)
+target_link_libraries(native_animation_08_transform_animation PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_effects_08_background_blend main.cpp)
+target_link_libraries(native_effects_08_background_blend PRIVATE kui)

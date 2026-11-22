@@ -1,0 +1,8 @@
+add_executable(native_webgl_05_framebuffer main.cpp)
+target_link_libraries(native_webgl_05_framebuffer PRIVATE kui)
+if(WIN32)
+    target_link_libraries(native_webgl_05_framebuffer PRIVATE opengl32)
+elseif(UNIX AND NOT APPLE)
+    find_package(OpenGL REQUIRED)
+    target_link_libraries(native_webgl_05_framebuffer PRIVATE OpenGL::GL)
+endif()

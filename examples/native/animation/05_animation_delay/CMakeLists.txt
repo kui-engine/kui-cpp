@@ -1,0 +1,2 @@
+add_executable(native_animation_05_animation_delay main.cpp)
+target_link_libraries(native_animation_05_animation_delay PRIVATE kui)

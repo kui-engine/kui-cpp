@@ -1,0 +1,2 @@
+add_executable(native_advanced_08_inner_html main.cpp)
+target_link_libraries(native_advanced_08_inner_html PRIVATE kui)

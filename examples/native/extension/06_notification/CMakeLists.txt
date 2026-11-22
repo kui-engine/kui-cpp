@@ -1,0 +1,2 @@
+add_executable(native_extension_06_notification main.cpp)
+target_link_libraries(native_extension_06_notification PRIVATE kui)

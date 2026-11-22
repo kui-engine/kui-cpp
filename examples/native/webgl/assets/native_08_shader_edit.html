@@ -1,0 +1,32 @@
+<!DOCTYPE html><html><head><style>
+body{margin:0;padding:20px;background:#080d19;color:#e5e7eb;font-family:"Segoe UI",sans-serif}.grid{display:flex;gap:16px}.card{background:#111827;border:1px solid #374151;border-radius:10px;padding:14px}canvas{display:block;background:#020617;border-radius:7px}textarea{display:block;width:360px;height:330px;padding:12px;background:#020617;color:#bfdbfe;border:1px solid #475569;border-radius:7px;font:12px Consolas,monospace}.button{display:inline-block;margin-top:10px;padding:9px 15px;background:#2563eb;border-radius:7px;color:white;cursor:pointer}.button:hover{background:#1d4ed8}h2{margin:0 0 10px;color:#c084fc}.status{margin-top:9px;color:#86efac;font:12px Consolas,monospace;white-space:pre-line}
+</style></head><body><h2>Live WebGL Shader Editor</h2><div class="grid"><div class="card"><canvas id="canvas" width="520" height="480"></canvas><div id="status" class="status">Compiling initial shader...</div></div><div class="card"><textarea id="source"></textarea><div id="compile" class="button">Compile fragment shader</div></div></div><script type="text/lua">
+local canvas=document:getElementById("canvas");local status=document:getElementById("status");local source=document:getElementById("source");local button=document:getElementById("compile");local gl=canvas:getContext("webgl")
+if not gl then status.textContent="ERROR: WebGL unavailable" return end
+local defaultSource=[[precision mediump float;
+varying vec2 vUV;
+uniform float uTime;
+void main() {
+  vec2 p = vUV * 2.0 - 1.0;
+  float rings = sin(length(p) * 18.0 - uTime * 3.0);
+  vec3 color = vec3(0.25 + 0.25 * rings,
+                    0.45 + 0.35 * sin(uTime + p.x * 4.0),
+                    0.8  - 0.25 * rings);
+  gl_FragColor = vec4(color, 1.0);
+}]]
+source.value=defaultSource
+local vertexSource=[[attribute vec2 aPos;varying vec2 vUV;void main(){gl_Position=vec4(aPos,0.,1.);vUV=aPos*.5+.5;}]]
+local function compileShader(kind,text)local s=gl:createShader(kind);gl:shaderSource(s,text);gl:compileShader(s);if gl:getShaderParameter(s,gl.COMPILE_STATUS)==0 then return nil,gl:getShaderInfoLog(s) end;return s,"" end
+local current=nil;local compileCount=0
+local function rebuild()
+  local vs,ve=compileShader(gl.VERTEX_SHADER,vertexSource);local fs,fe=compileShader(gl.FRAGMENT_SHADER,source.value)
+  if not vs or not fs then status.style:setProperty("color","#fca5a5");status.textContent="COMPILE ERROR\n"..(ve or "")..(fe or "");return end
+  local p=gl:createProgram();gl:attachShader(p,vs);gl:attachShader(p,fs);gl:linkProgram(p)
+  if gl:getProgramParameter(p,gl.LINK_STATUS)==0 then status.style:setProperty("color","#fca5a5");status.textContent="LINK ERROR\n"..gl:getProgramInfoLog(p);return end
+  current=p;compileCount=compileCount+1;status.style:setProperty("color","#86efac");status.textContent="Shader compiled and linked · revision "..compileCount
+end
+button:addEventListener("click",function() rebuild() end);rebuild()
+local quad={-1,-1,1,-1,-1,1,1,1};local b=gl:createBuffer();gl:bindBuffer(gl.ARRAY_BUFFER,b);gl:bufferDataFloat(gl.ARRAY_BUFFER,quad,gl.STATIC_DRAW)
+local function render(now)if current then gl:beginFrame();gl:useProgram(current);gl:bindBuffer(gl.ARRAY_BUFFER,b);local pos=gl:getAttribLocation(current,"aPos");gl:enableVertexAttribArray(pos);gl:vertexAttribPointer(pos,2,gl.FLOAT,false,0,0);gl:uniform1f(gl:getUniformLocation(current,"uTime"),now/1000);gl:drawArrays(gl.TRIANGLE_STRIP,0,4);gl:endFrame() end;requestAnimationFrame(render)end
+requestAnimationFrame(render)
+</script></body></html>

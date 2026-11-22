@@ -1,0 +1,2 @@
+add_executable(native_devtools_03_hot_reload main.cpp)
+target_link_libraries(native_devtools_03_hot_reload PRIVATE kui)

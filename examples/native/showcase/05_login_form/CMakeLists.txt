@@ -1,0 +1,2 @@
+add_executable(native_showcase_05_login_form main.cpp)
+target_link_libraries(native_showcase_05_login_form PRIVATE kui)

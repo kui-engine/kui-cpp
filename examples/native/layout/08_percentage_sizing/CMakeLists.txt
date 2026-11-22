@@ -1,0 +1,2 @@
+add_executable(native_layout_08_percentage_sizing main.cpp)
+target_link_libraries(native_layout_08_percentage_sizing PRIVATE kui)

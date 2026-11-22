@@ -1,0 +1,2 @@
+add_executable(native_platform_05_system_info main.cpp)
+target_link_libraries(native_platform_05_system_info PRIVATE kui)

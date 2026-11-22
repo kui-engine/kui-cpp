@@ -1,0 +1,2 @@
+add_executable(native_component_09_tree_view main.cpp)
+target_link_libraries(native_component_09_tree_view PRIVATE kui)

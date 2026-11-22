@@ -1,0 +1,2 @@
+add_executable(native_advanced_10_data_attributes main.cpp)
+target_link_libraries(native_advanced_10_data_attributes PRIVATE kui)

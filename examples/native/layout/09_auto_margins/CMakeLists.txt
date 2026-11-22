@@ -1,0 +1,2 @@
+add_executable(native_layout_09_auto_margins main.cpp)
+target_link_libraries(native_layout_09_auto_margins PRIVATE kui)

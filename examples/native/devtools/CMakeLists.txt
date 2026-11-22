@@ -1,0 +1,8 @@
+# devtools examples
+add_subdirectory(01_console_log)
+add_subdirectory(02_inspector)
+add_subdirectory(03_hot_reload)
+add_subdirectory(04_element_highlight)
+add_subdirectory(05_performance)
+add_subdirectory(06_network_panel)
+add_subdirectory(07_multi_target_discovery)

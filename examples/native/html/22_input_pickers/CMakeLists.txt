@@ -1,0 +1,2 @@
+add_executable(native_html_22_input_pickers main.cpp)
+target_link_libraries(native_html_22_input_pickers PRIVATE kui)

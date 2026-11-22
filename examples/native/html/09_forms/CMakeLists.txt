@@ -1,0 +1,2 @@
+add_executable(native_html_09_forms main.cpp)
+target_link_libraries(native_html_09_forms PRIVATE kui)

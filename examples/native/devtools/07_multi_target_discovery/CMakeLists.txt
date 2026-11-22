@@ -1,0 +1,2 @@
+add_executable(native_devtools_07_multi_target_discovery main.cpp)
+target_link_libraries(native_devtools_07_multi_target_discovery PRIVATE kui)

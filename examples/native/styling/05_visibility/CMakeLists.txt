@@ -1,0 +1,2 @@
+add_executable(native_styling_05_visibility main.cpp)
+target_link_libraries(native_styling_05_visibility PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_a11y_04_keyboard_nav main.cpp)
+target_link_libraries(native_a11y_04_keyboard_nav PRIVATE kui)

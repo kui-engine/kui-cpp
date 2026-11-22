@@ -1,0 +1,2 @@
+add_executable(native_script_01_lua_hello main.cpp)
+target_link_libraries(native_script_01_lua_hello PRIVATE kui)

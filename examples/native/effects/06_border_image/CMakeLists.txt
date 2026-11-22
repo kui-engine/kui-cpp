@@ -1,0 +1,2 @@
+add_executable(native_effects_06_border_image main.cpp)
+target_link_libraries(native_effects_06_border_image PRIVATE kui)

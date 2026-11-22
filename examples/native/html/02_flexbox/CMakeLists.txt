@@ -1,0 +1,2 @@
+add_executable(native_html_02_flexbox main.cpp)
+target_link_libraries(native_html_02_flexbox PRIVATE kui)

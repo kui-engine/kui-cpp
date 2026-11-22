@@ -1,0 +1,2 @@
+add_executable(native_component_08_tag_input main.cpp)
+target_link_libraries(native_component_08_tag_input PRIVATE kui)

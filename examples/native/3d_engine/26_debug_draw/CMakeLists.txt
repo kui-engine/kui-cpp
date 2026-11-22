@@ -1,0 +1,2 @@
+add_executable(native_3d_engine_26_debug_draw main.cpp)
+target_link_libraries(native_3d_engine_26_debug_draw PRIVATE kui)

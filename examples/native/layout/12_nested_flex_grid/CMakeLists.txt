@@ -1,0 +1,2 @@
+add_executable(native_layout_12_nested_flex_grid main.cpp)
+target_link_libraries(native_layout_12_nested_flex_grid PRIVATE kui)

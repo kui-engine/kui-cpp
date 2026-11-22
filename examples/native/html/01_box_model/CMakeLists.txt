@@ -1,0 +1,2 @@
+add_executable(native_html_01_box_model main.cpp)
+target_link_libraries(native_html_01_box_model PRIVATE kui)

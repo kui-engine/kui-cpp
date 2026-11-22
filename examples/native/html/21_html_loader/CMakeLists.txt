@@ -1,0 +1,2 @@
+add_executable(native_html_21_html_loader main.cpp)
+target_link_libraries(native_html_21_html_loader PRIVATE kui)

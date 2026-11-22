@@ -1,0 +1,9 @@
+# showcase examples
+add_subdirectory(01_dashboard)
+add_subdirectory(02_chat_app)
+add_subdirectory(03_file_browser)
+add_subdirectory(04_settings_page)
+add_subdirectory(05_login_form)
+add_subdirectory(06_kanban_board)
+add_subdirectory(07_music_player)
+add_subdirectory(08_game_ui)

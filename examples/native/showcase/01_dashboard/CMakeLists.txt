@@ -1,0 +1,2 @@
+add_executable(native_showcase_01_dashboard main.cpp)
+target_link_libraries(native_showcase_01_dashboard PRIVATE kui)

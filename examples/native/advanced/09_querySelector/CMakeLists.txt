@@ -1,0 +1,2 @@
+add_executable(native_advanced_09_querySelector main.cpp)
+target_link_libraries(native_advanced_09_querySelector PRIVATE kui)

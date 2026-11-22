@@ -1,0 +1,2 @@
+add_executable(native_media_03_media_controls main.cpp)
+target_link_libraries(native_media_03_media_controls PRIVATE kui)

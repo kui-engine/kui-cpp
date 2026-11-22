@@ -1,0 +1,2 @@
+add_executable(native_multiwindow_01_two_windows main.cpp)
+target_link_libraries(native_multiwindow_01_two_windows PRIVATE kui)

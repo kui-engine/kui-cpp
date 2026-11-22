@@ -1,0 +1,2 @@
+add_executable(native_layout_04_multi_column main.cpp)
+target_link_libraries(native_layout_04_multi_column PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_devtools_02_inspector main.cpp)
+target_link_libraries(native_devtools_02_inspector PRIVATE kui)

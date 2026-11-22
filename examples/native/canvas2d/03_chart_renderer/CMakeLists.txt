@@ -1,0 +1,2 @@
+add_executable(native_canvas2d_03_chart_renderer main.cpp)
+target_link_libraries(native_canvas2d_03_chart_renderer PRIVATE kui)

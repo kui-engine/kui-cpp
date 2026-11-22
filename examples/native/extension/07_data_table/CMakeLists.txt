@@ -1,0 +1,2 @@
+add_executable(native_extension_07_data_table main.cpp)
+target_link_libraries(native_extension_07_data_table PRIVATE kui)

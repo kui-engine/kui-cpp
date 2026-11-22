@@ -1,0 +1,2 @@
+add_executable(native_component_12_tooltip_and_tabindex main.cpp)
+target_link_libraries(native_component_12_tooltip_and_tabindex PRIVATE kui)

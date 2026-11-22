@@ -1,0 +1,2 @@
+add_executable(native_html_10_positioning main.cpp)
+target_link_libraries(native_html_10_positioning PRIVATE kui)

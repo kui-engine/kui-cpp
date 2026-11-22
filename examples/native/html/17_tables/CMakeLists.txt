@@ -1,0 +1,2 @@
+add_executable(native_html_17_tables main.cpp)
+target_link_libraries(native_html_17_tables PRIVATE kui)

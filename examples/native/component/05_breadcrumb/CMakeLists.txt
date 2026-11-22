@@ -1,0 +1,2 @@
+add_executable(native_component_05_breadcrumb main.cpp)
+target_link_libraries(native_component_05_breadcrumb PRIVATE kui)

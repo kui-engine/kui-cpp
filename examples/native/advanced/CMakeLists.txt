@@ -1,0 +1,11 @@
+# advanced examples
+add_subdirectory(01_dom_manipulation)
+add_subdirectory(02_event_handling)
+add_subdirectory(03_class_toggling)
+add_subdirectory(04_custom_element)
+add_subdirectory(05_virtual_list)
+add_subdirectory(06_theme_switching)
+add_subdirectory(07_computed_styles)
+add_subdirectory(08_inner_html)
+add_subdirectory(09_querySelector)
+add_subdirectory(10_data_attributes)

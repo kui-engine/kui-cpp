@@ -1,0 +1,2 @@
+add_executable(native_advanced_01_dom_manipulation main.cpp)
+target_link_libraries(native_advanced_01_dom_manipulation PRIVATE kui)

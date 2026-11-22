@@ -1,0 +1,9 @@
+# effects examples
+add_subdirectory(01_css_filters)
+add_subdirectory(02_blend_modes)
+add_subdirectory(03_backdrop_filter)
+add_subdirectory(04_clip_path)
+add_subdirectory(05_opacity_layers)
+add_subdirectory(06_border_image)
+add_subdirectory(07_outline)
+add_subdirectory(08_background_blend)

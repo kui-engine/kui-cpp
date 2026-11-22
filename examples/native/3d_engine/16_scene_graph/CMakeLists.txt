@@ -1,0 +1,2 @@
+add_executable(native_3d_engine_16_scene_graph main.cpp)
+target_link_libraries(native_3d_engine_16_scene_graph PRIVATE kui)

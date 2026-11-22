@@ -1,0 +1,2 @@
+add_executable(native_multiwindow_02_parent_child main.cpp)
+target_link_libraries(native_multiwindow_02_parent_child PRIVATE kui)

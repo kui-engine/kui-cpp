@@ -1,0 +1,2 @@
+add_executable(native_extension_09_spectrum_visualizer main.cpp)
+target_link_libraries(native_extension_09_spectrum_visualizer PRIVATE kui)

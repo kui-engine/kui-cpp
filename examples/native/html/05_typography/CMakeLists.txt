@@ -1,0 +1,2 @@
+add_executable(native_html_05_typography main.cpp)
+target_link_libraries(native_html_05_typography PRIVATE kui)

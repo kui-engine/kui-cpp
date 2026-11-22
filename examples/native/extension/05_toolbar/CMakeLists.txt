@@ -1,0 +1,2 @@
+add_executable(native_extension_05_toolbar main.cpp)
+target_link_libraries(native_extension_05_toolbar PRIVATE kui)

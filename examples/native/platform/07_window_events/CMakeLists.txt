@@ -1,0 +1,2 @@
+add_executable(native_platform_07_window_events main.cpp)
+target_link_libraries(native_platform_07_window_events PRIVATE kui)

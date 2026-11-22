@@ -1,0 +1,2 @@
+add_executable(native_a11y_03_focus_management main.cpp)
+target_link_libraries(native_a11y_03_focus_management PRIVATE kui)

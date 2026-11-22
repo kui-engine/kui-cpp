@@ -1,0 +1,2 @@
+add_executable(native_animation_01_keyframes main.cpp)
+target_link_libraries(native_animation_01_keyframes PRIVATE kui)

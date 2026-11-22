@@ -1,0 +1,2 @@
+add_executable(native_devtools_04_element_highlight main.cpp)
+target_link_libraries(native_devtools_04_element_highlight PRIVATE kui)

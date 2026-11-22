@@ -1,0 +1,2 @@
+add_executable(native_effects_01_css_filters main.cpp)
+target_link_libraries(native_effects_01_css_filters PRIVATE kui)

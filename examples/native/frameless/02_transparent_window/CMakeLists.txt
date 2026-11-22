@@ -1,0 +1,2 @@
+add_executable(native_frameless_02_transparent_window main.cpp)
+target_link_libraries(native_frameless_02_transparent_window PRIVATE kui)

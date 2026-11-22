@@ -1,0 +1,2 @@
+add_executable(native_network_02_async_request main.cpp)
+target_link_libraries(native_network_02_async_request PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_devtools_01_console_log main.cpp)
+target_link_libraries(native_devtools_01_console_log PRIVATE kui)

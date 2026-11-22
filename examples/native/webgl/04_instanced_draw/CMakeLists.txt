@@ -1,0 +1,8 @@
+add_executable(native_webgl_04_instanced_draw main.cpp)
+target_link_libraries(native_webgl_04_instanced_draw PRIVATE kui)
+if(WIN32)
+    target_link_libraries(native_webgl_04_instanced_draw PRIVATE opengl32)
+elseif(UNIX AND NOT APPLE)
+    find_package(OpenGL REQUIRED)
+    target_link_libraries(native_webgl_04_instanced_draw PRIVATE OpenGL::GL)
+endif()

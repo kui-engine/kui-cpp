@@ -1,0 +1,2 @@
+add_executable(native_effects_02_blend_modes main.cpp)
+target_link_libraries(native_effects_02_blend_modes PRIVATE kui)

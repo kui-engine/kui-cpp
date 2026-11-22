@@ -1,0 +1,2 @@
+add_executable(native_3d_engine_03_lighting main.cpp)
+target_link_libraries(native_3d_engine_03_lighting PRIVATE kui)

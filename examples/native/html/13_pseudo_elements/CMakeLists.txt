@@ -1,0 +1,2 @@
+add_executable(native_html_13_pseudo_elements main.cpp)
+target_link_libraries(native_html_13_pseudo_elements PRIVATE kui)

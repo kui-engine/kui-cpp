@@ -1,0 +1,44 @@
+#include <kui/kui.h>
+
+int main() {
+    kui::Platform::init();
+
+    auto window = kui::Window::create({
+        .title  = "KUI — HTML Loader",
+        .width  = 800,
+        .height = 600,
+    });
+
+    auto* doc = window->document();
+
+    doc->loadHTML(R"(
+<!DOCTYPE html>
+<html><head><style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { display: flex; align-items: center; justify-content: center; height: 100vh;
+       background: linear-gradient(135deg, #667eea, #764ba2); font-family: "Segoe UI", sans-serif; }
+.card { background: white; padding: 40px; border-radius: 16px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.3); text-align: center; }
+.card h2 { color: #1e293b; margin-bottom: 8px; }
+.card p { color: #64748b; margin-bottom: 16px; }
+.card .path { font-family: monospace; background: #f1f5f9; padding: 4px 8px;
+              border-radius: 4px; font-size: 13px; }
+#status { margin-top: 12px; font-size: 14px; color: #10b981; }
+</style></head><body>
+<div class="card">
+  <h2>HTML File Loader</h2>
+  <p>This example demonstrates loading HTML from an external file.</p>
+  <p>Use <code>doc->loadFile(path)</code> to load:</p>
+  <div class="path" id="filePath">No file loaded</div>
+  <div id="status"></div>
+</div>
+</body></html>
+    )");
+
+    // Example: load external HTML file
+    // doc->loadFile("path/to/your/file.html");
+    auto* status = doc->getElementById("status");
+    status->setTextContent("Inline HTML loaded successfully.");
+
+    return kui::Platform::run();
+}

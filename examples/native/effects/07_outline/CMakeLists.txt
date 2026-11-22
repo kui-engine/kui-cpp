@@ -1,0 +1,2 @@
+add_executable(native_effects_07_outline main.cpp)
+target_link_libraries(native_effects_07_outline PRIVATE kui)

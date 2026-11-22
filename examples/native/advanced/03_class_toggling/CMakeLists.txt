@@ -1,0 +1,2 @@
+add_executable(native_advanced_03_class_toggling main.cpp)
+target_link_libraries(native_advanced_03_class_toggling PRIVATE kui)

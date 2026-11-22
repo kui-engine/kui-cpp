@@ -1,0 +1,2 @@
+add_executable(native_media_02_video_player main.cpp)
+target_link_libraries(native_media_02_video_player PRIVATE kui)

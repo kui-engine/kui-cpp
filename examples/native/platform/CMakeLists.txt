@@ -1,0 +1,9 @@
+# platform examples
+add_subdirectory(01_window_resize)
+add_subdirectory(02_dpi_scaling)
+add_subdirectory(03_clipboard)
+add_subdirectory(04_file_dialog)
+add_subdirectory(05_system_info)
+add_subdirectory(06_timer_intervals)
+add_subdirectory(07_window_events)
+add_subdirectory(08_file_drag_drop)

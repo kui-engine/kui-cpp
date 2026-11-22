@@ -1,0 +1,2 @@
+add_executable(native_advanced_02_event_handling main.cpp)
+target_link_libraries(native_advanced_02_event_handling PRIVATE kui)

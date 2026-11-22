@@ -1,0 +1,2 @@
+add_executable(native_3d_engine_18_animation_skeletal main.cpp)
+target_link_libraries(native_3d_engine_18_animation_skeletal PRIVATE kui)

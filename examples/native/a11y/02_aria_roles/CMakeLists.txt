@@ -1,0 +1,2 @@
+add_executable(native_a11y_02_aria_roles main.cpp)
+target_link_libraries(native_a11y_02_aria_roles PRIVATE kui)

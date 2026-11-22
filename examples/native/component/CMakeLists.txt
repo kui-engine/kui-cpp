@@ -1,0 +1,13 @@
+# component examples
+add_subdirectory(01_tabs)
+add_subdirectory(02_accordion)
+add_subdirectory(03_modal)
+add_subdirectory(04_tooltip_comp)
+add_subdirectory(05_breadcrumb)
+add_subdirectory(06_pagination)
+add_subdirectory(07_progress_bar)
+add_subdirectory(08_tag_input)
+add_subdirectory(09_tree_view)
+add_subdirectory(10_list_view)
+add_subdirectory(11_anchored_popup)
+add_subdirectory(12_tooltip_and_tabindex)

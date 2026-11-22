@@ -1,0 +1,2 @@
+add_executable(native_effects_03_backdrop_filter main.cpp)
+target_link_libraries(native_effects_03_backdrop_filter PRIVATE kui)

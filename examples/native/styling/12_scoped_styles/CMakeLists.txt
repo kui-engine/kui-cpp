@@ -1,0 +1,2 @@
+add_executable(native_styling_12_scoped_styles main.cpp)
+target_link_libraries(native_styling_12_scoped_styles PRIVATE kui)

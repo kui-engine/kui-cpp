@@ -1,0 +1,2 @@
+add_executable(native_styling_09_media_queries main.cpp)
+target_link_libraries(native_styling_09_media_queries PRIVATE kui)

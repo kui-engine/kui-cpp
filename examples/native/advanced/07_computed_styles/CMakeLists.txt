@@ -1,0 +1,2 @@
+add_executable(native_advanced_07_computed_styles main.cpp)
+target_link_libraries(native_advanced_07_computed_styles PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_layout_10_writing_mode main.cpp)
+target_link_libraries(native_layout_10_writing_mode PRIVATE kui)

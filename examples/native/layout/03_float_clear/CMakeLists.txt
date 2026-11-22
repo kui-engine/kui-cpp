@@ -1,0 +1,2 @@
+add_executable(native_layout_03_float_clear main.cpp)
+target_link_libraries(native_layout_03_float_clear PRIVATE kui)

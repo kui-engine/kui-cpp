@@ -1,0 +1,2 @@
+add_executable(native_styling_02_font_stacks main.cpp)
+target_link_libraries(native_styling_02_font_stacks PRIVATE kui)

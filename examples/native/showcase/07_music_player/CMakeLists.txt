@@ -1,0 +1,2 @@
+add_executable(native_showcase_07_music_player main.cpp)
+target_link_libraries(native_showcase_07_music_player PRIVATE kui)

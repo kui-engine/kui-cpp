@@ -1,0 +1,2 @@
+add_executable(native_3d_engine_07_skybox main.cpp)
+target_link_libraries(native_3d_engine_07_skybox PRIVATE kui)

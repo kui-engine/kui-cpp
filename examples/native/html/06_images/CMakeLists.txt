@@ -1,0 +1,2 @@
+add_executable(native_html_06_images main.cpp)
+target_link_libraries(native_html_06_images PRIVATE kui)

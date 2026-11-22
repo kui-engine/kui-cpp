@@ -1,0 +1,2 @@
+add_executable(native_html_08_timer_animation main.cpp)
+target_link_libraries(native_html_08_timer_animation PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_html_15_scroll main.cpp)
+target_link_libraries(native_html_15_scroll PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_styling_01_border_radius main.cpp)
+target_link_libraries(native_styling_01_border_radius PRIVATE kui)

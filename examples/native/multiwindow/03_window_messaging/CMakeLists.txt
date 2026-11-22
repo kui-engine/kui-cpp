@@ -1,0 +1,2 @@
+add_executable(native_multiwindow_03_window_messaging main.cpp)
+target_link_libraries(native_multiwindow_03_window_messaging PRIVATE kui)

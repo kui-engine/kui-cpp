@@ -1,0 +1,13 @@
+# layout examples
+add_subdirectory(01_block_flow)
+add_subdirectory(02_inline_flow)
+add_subdirectory(03_float_clear)
+add_subdirectory(04_multi_column)
+add_subdirectory(05_aspect_ratio)
+add_subdirectory(06_min_max_sizes)
+add_subdirectory(07_calc_values)
+add_subdirectory(08_percentage_sizing)
+add_subdirectory(09_auto_margins)
+add_subdirectory(10_writing_mode)
+add_subdirectory(11_direction_rtl)
+add_subdirectory(12_nested_flex_grid)

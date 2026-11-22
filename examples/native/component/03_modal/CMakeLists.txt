@@ -1,0 +1,2 @@
+add_executable(native_component_03_modal main.cpp)
+target_link_libraries(native_component_03_modal PRIVATE kui)

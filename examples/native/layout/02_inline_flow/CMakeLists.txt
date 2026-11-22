@@ -1,0 +1,2 @@
+add_executable(native_layout_02_inline_flow main.cpp)
+target_link_libraries(native_layout_02_inline_flow PRIVATE kui)

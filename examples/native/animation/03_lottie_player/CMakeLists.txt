@@ -1,0 +1,2 @@
+add_executable(native_animation_03_lottie_player main.cpp)
+target_link_libraries(native_animation_03_lottie_player PRIVATE kui)

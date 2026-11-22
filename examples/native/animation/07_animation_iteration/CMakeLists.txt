@@ -1,0 +1,2 @@
+add_executable(native_animation_07_animation_iteration main.cpp)
+target_link_libraries(native_animation_07_animation_iteration PRIVATE kui)

@@ -1,0 +1,2 @@
+add_executable(native_html_04_css_styling main.cpp)
+target_link_libraries(native_html_04_css_styling PRIVATE kui)

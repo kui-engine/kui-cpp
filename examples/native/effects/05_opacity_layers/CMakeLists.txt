@@ -1,0 +1,2 @@
+add_executable(native_effects_05_opacity_layers main.cpp)
+target_link_libraries(native_effects_05_opacity_layers PRIVATE kui)

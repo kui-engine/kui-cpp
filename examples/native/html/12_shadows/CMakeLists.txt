@@ -1,0 +1,2 @@
+add_executable(native_html_12_shadows main.cpp)
+target_link_libraries(native_html_12_shadows PRIVATE kui)

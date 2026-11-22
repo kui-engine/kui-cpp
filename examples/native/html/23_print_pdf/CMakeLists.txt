@@ -1,0 +1,2 @@
+add_executable(native_html_23_print_pdf main.cpp)
+target_link_libraries(native_html_23_print_pdf PRIVATE kui)

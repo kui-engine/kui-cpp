@@ -1,0 +1,2 @@
+add_executable(native_showcase_08_game_ui main.cpp)
+target_link_libraries(native_showcase_08_game_ui PRIVATE kui)
